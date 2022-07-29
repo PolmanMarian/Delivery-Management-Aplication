@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.EmployeeController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Label text="Orders">
+                    <font>
+                        <Font name="System Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children></HBox>
+        <HBox prefHeight="213.0" prefWidth="600.0">
+            <children>
+                <TableView fx:id="ordersTable" editable="true" prefHeight="210.0" prefWidth="690.0">
+                    <columns>
+                        <TableColumn fx:id="Client" prefWidth="200.80005186796188" text="Client" />
+                        <TableColumn fx:id="OrderDate" maxWidth="275.1999969482422" prefWidth="189.59996032714844" text="OrderDate" />
+                        <TableColumn fx:id="TotalPrice" maxWidth="429.59997253417964" prefWidth="209.60003662109375" text="TotalPrice" />
+                    </columns>
+                </TableView>
+            </children>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" text="Button" />
+            </children>
+        </HBox>
+    </children>
+</VBox>

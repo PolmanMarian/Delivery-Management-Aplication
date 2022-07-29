@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PresentationLayer.LoginController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="67.0" prefWidth="400.0" text="FoodMenu">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="63.0" prefWidth="600.0">
+         <children>
+            <TextField fx:id="username" alignment="CENTER" prefHeight="40.0" prefWidth="400.0" promptText="Username">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="600.0">
+         <children>
+            <PasswordField fx:id="password" alignment="CENTER" minHeight="40.0" prefWidth="400.0" promptText="Password">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onLogin" prefHeight="60.0" prefWidth="200.0" text="Login" />
+            <Button mnemonicParsing="false" onAction="#onRegister" prefHeight="60.0" prefWidth="200.0" text="Register" />
+            <ComboBox fx:id="typeSelect" prefHeight="60.0" prefWidth="150.0" promptText="UserType" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
